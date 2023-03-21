@@ -1,73 +1,192 @@
-{"intents": [
-    {"tag": "greeting",
-     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-     "context": [""]
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "What's up",
+          "Howdy",
+          "Good morning",
+          "Good afternoon",
+          "Good evening"
+        ],
+        "responses": [
+          "Hello!",
+          "Hi there!",
+          "Greetings!",
+          "How can I help you?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Take care",
+          "So long",
+          "Farewell"
+        ],
+        "responses": [
+          "Goodbye!",
+          "See you later!",
+          "Take care!",
+          "Have a nice day!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "Appreciate it",
+          "I appreciate that",
+          "Thanks a lot",
+          "Thank you very much"
+        ],
+        "responses": [
+          "You're welcome!",
+          "No problem!",
+          "Anytime!",
+          "Glad to help!"
+        ]
+      },
+      {
+        "tag": "name",
+        "patterns": [
+          "What's your name?",
+          "What should I call you?",
+          "Can you tell me your name?",
+          "Who are you?"
+        ],
+        "responses": [
+          "My name is ChatBot.",
+          "You can call me ChatBot.",
+          "I'm ChatBot.",
+          "I am an AI chatbot."
+        ]
+      },
+      {
+        "tag": "age",
+        "patterns": [
+          "How old are you?",
+          "What's your age?",
+          "When were you born?"
+        ],
+        "responses": [
+          "I am a machine, I don't age.",
+          "I don't have an age, I'm a computer program.",
+          "I don't age like humans do."
+        ]
+      },
+      {
+        "tag": "creator",
+        "patterns": [
+          "Who made you?",
+          "Who created you?",
+          "Who is your creator?"
+        ],
+        "responses": [
+          "I was created by François, Jason, Nathan and Robin.",
+          "My creator are François, Jason, Nathan and Robin.",
+          "I was built by François, Jason, Nathan and Robin."
+        ]
+      },
+      {
+        "tag": "howdoing",
+        "patterns": [
+          "How are you?",
+          "How's it going?",
+          "How's your day?",
+          "How are things?",
+          "What's up?",
+          "What's new?"
+        ],
+        "responses": [
+          "I'm doing well, thank you.",
+          "I'm fine, thanks for asking.",
+          "Everything is going well, thanks.",
+          "I'm just a computer program, so I don't really have feelings, but I'm functioning properly.",
+          "I'm here to help you, what can I do for you?"
+        ]
+      },
+      {
+        "tag": "joke",
+        "patterns": [
+          "Tell me a joke",
+          "Do you know any jokes?",
+          "Can you make me laugh?",
+          "Joke please"
+        ],
+        "responses": [
+          "Why did the tomato turn red? Because it saw the salad dressing!",
+          "Why did the cookie go to the doctor? Because it was feeling crummy!"
+        ]
     },
-    {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-     "context": [""]
-    },
-    {"tag": "thanks",
-     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure"],
-     "context": [""]
-    },
-    {"tag": "noanswer",
-     "patterns": [],
-     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-     "context": [""]
-    },
-    {"tag": "options",
-     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-     "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
-     "context": [""]
-    },
-    {"tag": "adverse_drug",
-     "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-     "responses": ["Navigating to Adverse drug reaction module"],
-     "context": [""]
-    },
-    {"tag": "blood_pressure",
-     "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-     "responses": ["Navigating to Blood Pressure module"],
-     "context": [""]
-    },
-    {"tag": "blood_pressure_search",
-     "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-     "responses": ["Please provide Patient ID", "Patient ID?"],
-     "context": ["search_blood_pressure_by_patient_id"]
-    },
-    {"tag": "search_blood_pressure_by_patient_id",
-     "patterns": [],
-     "responses": ["Loading Blood pressure result for Patient"],
-     "context": [""]
-    },
-    {"tag": "pharmacy_search",
-     "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-     "responses": ["Please provide pharmacy name"],
-     "context": ["search_pharmacy_by_name"]
-    },
-    {"tag": "search_pharmacy_by_name",
-     "patterns": [],
-     "responses": ["Loading pharmacy details"],
-     "context": [""]
-    },
-    {"tag": "hospital_search",
-     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-     "responses": ["Please provide hospital name or location"],
-     "context": ["search_hospital_by_params"]
-    },
-    {"tag": "search_hospital_by_params",
-     "patterns": [],
-     "responses": ["Please provide hospital type"],
-     "context": ["search_hospital_by_type"]
-    },
-    {"tag": "search_hospital_by_type",
-     "patterns": [],
-     "responses": ["Loading hospital details"],
-     "context": [""]
-    }
-]
-}
+    {
+        "tag": "favorite_color",
+        "patterns": [
+          "What's your favorite color?",
+          "What color do you like?",
+          "Do you have a favorite color?",
+          "Which color do you prefer?"
+        ],
+        "responses": [
+          "I don't have the ability to see colors as I am a machine.",
+          "I'm not capable of having a favorite color as I am a program.",
+          "I don't have preferences like humans do as I am a computer program.",
+          "As an AI chatbot, I don't have the ability to see colors or have preferences."
+        ]
+      },
+      {
+        "tag": "hobbies",
+        "patterns": [
+          "What do you like to do?",
+          "What are your hobbies?",
+          "What do you do for fun?",
+          "Do you have any interests?"
+        ],
+        "responses": [
+          "As a chatbot, I don't have the ability to have hobbies or interests as humans do.",
+          "I'm programmed to assist and communicate with people, that's my purpose.",
+          "My only job is to chat with you and help you with whatever you need.",
+          "I'm here to answer your questions and provide information, that's what I do best."
+        ]
+      },
+      {
+        "tag": "weather",
+        "patterns": [
+          "What's the weather like today?",
+          "Will it rain today?",
+          "Is it hot outside?",
+          "What's the temperature?",
+          "Can you give me a weather update?"
+        ],
+        "responses": [
+          "I'm sorry, I don't have access to real-time weather data.",
+          "I'm not able to provide weather updates as I'm a chatbot.",
+          "I don't have the ability to check the weather as I am a machine.",
+          "I suggest checking a weather app or website for accurate weather information."
+        ]
+      },
+      {
+        "tag": "movies",
+        "patterns": [
+          "What's your favorite movie?",
+          "Do you like movies?",
+          "What kind of movies do you like?",
+          "Have you seen any good movies lately?"
+        ],
+        "responses": [
+          "As a chatbot, I don't have the ability to watch movies or have preferences like humans do.",
+          "I'm here to chat and assist you, not to watch movies.",
+          "I don't have the ability to like or dislike things as I am a machine.",
+          "My main purpose is to help you with whatever you need, not to watch movies."
+        ]
+      }
+    ]
+  }
+  
+  
