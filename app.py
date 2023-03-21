@@ -50,19 +50,28 @@ def predict_class(sentence, model):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
-def getResponse(ints, intents_json):
-    tag = ints[0]['intent']
-    list_of_intents = intents_json['intents']
-    for i in list_of_intents:
-        if(i['tag']== tag):
-            result = random.choice(i['responses'])
-            break
-    return result
+context = {}
 
-def chatbot_response(msg):
+def chatbot_response(msg, userID='1'):
     ints = predict_class(msg, model)
-    res = getResponse(ints, intents)
-    return res
+    if ints:
+        # loop as long as there are matches to process
+        while ints:
+            for i in intents['intents']:
+                tag = ints[0]['intent']
+                # find a tag matching the first result
+                if i['tag'] == tag:
+                    # set context for this intent if necessary
+                    if 'context_set' in i:
+                        context[userID] = i['context_set']
+
+                    # check if this intent is contextual and applies to this user's conversation
+                    if not 'context_filter' in i or \
+                        (userID in context and 'context_filter' in i and i['context_filter'] == context[userID]):
+                        # a random response from the intent
+                        return random.choice(i['responses'])
+                
+            ints.pop(0)
 
 
 from flask import Flask, render_template, request
