@@ -108,10 +108,11 @@
         {
             "tag": "interet_energie",
             "patterns": [
-                "J'aime l'energie",
-                "je veux travailler dans l'energie",
-                "je veux construire des centrales",
-                "j'aime le nucleaire"
+                "J'aime le nucléaire",
+                "J'aime l'énergie'",
+                "J'aime les énergies",
+                "Je veux travailler dans l'énergie",
+                "Je suis intéressé par le nucléaire"
             ],
             "responses": [
                 "Super, pour vous la TAF DEMIN semble parfaite ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
@@ -120,11 +121,11 @@
         {
             "tag": "interetmanagement",
             "patterns": [
-                "je suis interesse par le marketing",
-                "je suis interesse par l'economie",
-                "Je veux etre manager",
-                "le management m'interesse",
-                "la transition digitale m'interesse"
+                "J'aime l'économie",
+                "J'aime le marketing'",
+                "J'aime le conseil",
+                "Je veux travailler dans la transition digitale",
+                "Je suis intéressé par le management"
             ],
             "responses": [
                 "Super, je vous conseille la TAF DIGIC ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
@@ -136,7 +137,8 @@
                 "J'aime l'electronique",
                 "J'aime la robotique",
                 "J'aime les systemes embarques",
-                "Je veux travailler dans l'informatique embarquee"
+                "Je veux travailler dans l'informatique embarquee",
+                "Je suis intéressé par les robots"
             ],
             "responses": [
                 "Super, je vous conseille la TAF ASCY ou ROBIN ! N'hésitez pas à poser plus de questions pour avoir des détails sur ces TAFs"
@@ -145,11 +147,11 @@
         {
             "tag": "interetcopsi",
             "patterns": [
-                "J'aime la recherche operationnelle",
-                "J'aime l'optimisation",
-                "Je veux faire de l'optimisation",
-                "Je veux planifier ou faire de la planification",
-                "J'aime l'ordonnancement"
+                "J'aime l'optimisation'",
+                "J'aime la recherche opérationnelle'",
+                "J'aime l'ordonnancement'",
+                "Je veux travailler dans l'optimisation de systèmes industriels",
+                "Je suis intéressé par l'industrie"
             ],
             "responses": [
                 "Super, je vous conseille la TAF COPSI ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
@@ -251,12 +253,11 @@
         {
             "tag": "recommenddasci",
             "patterns": [
-                "J'aimerais faire de la finance",
-                "Je veux faire du Machine Learning",
-                "Je veux faire de l'IA",
-                "Je veux apprendre le Deep Learning",
-                "Je m'interesse au ML",
-                "Je veux apprendre la Intelligence Artificielle"
+                "J'aime l'IA",
+                "J'aime le machine learning'",
+                "J'aime l'intelligence artificielle'",
+                "Je veux travailler dans la data",
+                "Je suis intéressé par l'apprentissage automatique"
             ],
             "responses": [
                 "Dans ce cas je te conseille la taf DASCI. N'hésite pas à me poser plus de questions pour en savoir plus sur cette TAF ?"
