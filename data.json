@@ -16,7 +16,7 @@
             ]
         },
         {
-            "tag": "au revoir",
+            "tag": "aurevoir",
             "patterns": [
                 "Au revoir",
                 "A plus tard",
@@ -106,13 +106,13 @@
             ]
         },
         {
-            "tag": "interet_energie",
+            "tag": "interetenergie",
             "patterns": [
-                "J'aime le nucléaire",
-                "J'aime l'énergie'",
-                "J'aime les énergies",
-                "Je veux travailler dans l'énergie",
-                "Je suis intéressé par le nucléaire"
+                "J'aime le nucleaire",
+                "J'aime l'energie'",
+                "J'aime les energies",
+                "Je veux travailler dans l'energie",
+                "Je suis interesse par le nucleaire"
             ],
             "responses": [
                 "Super, pour vous la TAF DEMIN semble parfaite ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
@@ -121,11 +121,11 @@
         {
             "tag": "interetmanagement",
             "patterns": [
-                "J'aime l'économie",
+                "J'aime l'economie",
                 "J'aime le marketing'",
                 "J'aime le conseil",
                 "Je veux travailler dans la transition digitale",
-                "Je suis intéressé par le management"
+                "Je suis interesse par le management"
             ],
             "responses": [
                 "Super, je vous conseille la TAF DIGIC ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
@@ -138,7 +138,7 @@
                 "J'aime la robotique",
                 "J'aime les systemes embarques",
                 "Je veux travailler dans l'informatique embarquee",
-                "Je suis intéressé par les robots"
+                "Je suis interesse par les robots"
             ],
             "responses": [
                 "Super, je vous conseille la TAF ASCY ou ROBIN ! N'hésitez pas à poser plus de questions pour avoir des détails sur ces TAFs"
@@ -148,10 +148,10 @@
             "tag": "interetcopsi",
             "patterns": [
                 "J'aime l'optimisation'",
-                "J'aime la recherche opérationnelle'",
+                "J'aime la recherche operationnelle'",
                 "J'aime l'ordonnancement'",
-                "Je veux travailler dans l'optimisation de systèmes industriels",
-                "Je suis intéressé par l'industrie"
+                "Je veux travailler dans l'optimisation de systemes industriels",
+                "Je suis interesse par l'industrie"
             ],
             "responses": [
                 "Super, je vous conseille la TAF COPSI ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
@@ -257,7 +257,7 @@
                 "J'aime le machine learning'",
                 "J'aime l'intelligence artificielle'",
                 "Je veux travailler dans la data",
-                "Je suis intéressé par l'apprentissage automatique"
+                "Je suis interesse par l'apprentissage automatique"
             ],
             "responses": [
                 "Dans ce cas je te conseille la taf DASCI. N'hésite pas à me poser plus de questions pour en savoir plus sur cette TAF ?"
@@ -444,6 +444,56 @@
             ],
             "responses": [
                 "La radioactivité est un sujet essentiel dans la TAF DEMIN. Les étudiants y apprennent les propriétés et les dangers des matériaux radioactifs, ainsi que les techniques de gestion des déchets nucléaires. Ils étudient également les différentes sources de radioactivité et les impacts environnementaux et sanitaires associés. Cette formation pointue leur permet d'acquérir les compétences nécessaires à la gestion et au développement des installations nucléaires dans un contexte de sûreté renforcée."
+            ]
+        },
+        {
+            "tag": "robin",
+            "patterns": [
+                "Qu'est-ce que la TAF ROBIN ?",
+                "Je veux en savoir plus sur la TAF ROBIN",
+                "Explique-moi la TAF ROBIN",
+                "Que peut-on apprendre dans la TAF ROBIN ?",
+                "Je suis interesse par la robotique",
+                "Je suis interesse par les systemes embarques"
+            ],
+            "responses": [
+                "La TAF ROBIN est une spécialisation en robotique et interactions proposée par IMT Atlantique. Elle permet aux ingénieurs de maîtriser les compétences en contrôle/commande, en systèmes embarqués, en intelligence artificielle, en traitement de l'image et en interaction homme-robot, leur permettant de travailler sur des projets de conception, de réalisation et de mise en œuvre de systèmes robotiques. Elle est particulièrement adaptée aux étudiants passionnés de robotique, de contrôle-commande et de systèmes embarqués."
+            ]
+        },
+        {
+            "tag": "robotique",
+            "patterns": [
+                "Qu'est-ce que la robotique ?",
+                "Je veux en savoir plus sur la robotique",
+                "Explique-moi la robotique",
+                "Que peut-on apprendre sur la robotique dans la TAF ROBIN ?"
+            ],
+            "responses": [
+                "La robotique est une discipline de l'ingénierie qui concerne la conception, la construction et l'utilisation de robots. Dans la TAF ROBIN, les étudiants apprendront les principes de la robotique, les algorithmes de commande des robots, les technologies de capteurs et de traitement de l'image, et les méthodes d'interaction homme-robot."
+            ]
+        },
+        {
+            "tag": "controle_commande",
+            "patterns": [
+                "Qu'est-ce que le controle/commande ?",
+                "Je veux en savoir plus sur le controle/commande",
+                "Explique-moi le controle/commande",
+                "Que peut-on apprendre sur le controle/commande dans la TAF ROBIN ?"
+            ],
+            "responses": [
+                "Le contrôle/commande est une branche de l'ingénierie qui concerne la commande des systèmes dynamiques. Dans la TAF ROBIN, les étudiants apprendront les principes de la commande, les techniques de modélisation des systèmes dynamiques, les algorithmes de commande avancés, ainsi que les technologies associées au contrôle/commande des systèmes robotiques."
+            ]
+        },
+        {
+            "tag": "systemes_embarques",
+            "patterns": [
+                "Qu'est-ce que les systemes embarques ?",
+                "Je veux en savoir plus sur les systemes embarques",
+                "Explique-moi les systemes embarques",
+                "Que peut-on apprendre sur les systemes embarques dans la TAF ROBIN ?"
+            ],
+            "responses": [
+                "Les systèmes embarqués sont des systèmes informatiques conçus pour des applications spécifiques, intégrés à un système plus vaste. Dans la TAF ROBIN, les étudiants apprendront les principes de la conception des systèmes embarqués, les architectures de systèmes, les langages de programmation et les technologies associées aux systèmes embarqués pour les robots."
             ]
         }
     ]
