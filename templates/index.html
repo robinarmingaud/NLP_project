@@ -20,7 +20,7 @@
   <section class="msger">
     <header class="msger-header">
       <div class="msger-header-title">
-        <i class="bi bi-robot"></i></i> Chatbot UE IMT Atlantique <i class="bi bi-robot"></i></i>
+        <i class="bi bi-robot"></i></i> Chatbot TAF IMT Atlantique <i class="bi bi-robot"></i></i>
       </div>
     </header>
 
@@ -30,8 +30,8 @@
     </main>
 
     <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
-      <button type="submit" class="msger-send-btn">Send</button>
+      <input type="text" class="msger-input" id="textInput" placeholder="Tapez votre question...">
+      <button type="submit" class="msger-send-btn">Envoyer</button>
     </form>
   </section>
   <!-- partial -->
@@ -44,7 +44,7 @@
     const BOT_IMG = "https://cdn-icons-png.flaticon.com/512/3649/3649460.png";
     const PERSON_IMG = "https://pngimage.net/wp-content/uploads/2018/06/icone-personne-png-4.png";
     const BOT_NAME = "    ChatBot";
-    const PERSON_NAME = "You";
+    const PERSON_NAME = "Vous";
 
     msgerForm.addEventListener("submit", event => {
       event.preventDefault();
@@ -103,7 +103,7 @@
       return `${h.slice(-2)}:${m.slice(-2)}`;
     }
 
-    appendMessage(BOT_NAME,BOT_IMG,"left","Hi, welcome to our ChatBot ! How can I help you ?")
+    appendMessage(BOT_NAME,BOT_IMG,"left","Bonjour, comment puis-je vous aider ?")
 
   </script>
 

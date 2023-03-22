@@ -1,192 +1,449 @@
 {
     "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hello",
-          "Hey",
-          "What's up",
-          "Howdy",
-          "Good morning",
-          "Good afternoon",
-          "Good evening"
-        ],
-        "responses": [
-          "Hello!",
-          "Hi there!",
-          "Greetings!",
-          "How can I help you?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "Bye",
-          "Goodbye",
-          "See you later",
-          "Take care",
-          "So long",
-          "Farewell"
-        ],
-        "responses": [
-          "Goodbye!",
-          "See you later!",
-          "Take care!",
-          "Have a nice day!"
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": [
-          "Thanks",
-          "Thank you",
-          "Appreciate it",
-          "I appreciate that",
-          "Thanks a lot",
-          "Thank you very much"
-        ],
-        "responses": [
-          "You're welcome!",
-          "No problem!",
-          "Anytime!",
-          "Glad to help!"
-        ]
-      },
-      {
-        "tag": "name",
-        "patterns": [
-          "What's your name?",
-          "What should I call you?",
-          "Can you tell me your name?",
-          "Who are you?"
-        ],
-        "responses": [
-          "My name is ChatBot.",
-          "You can call me ChatBot.",
-          "I'm ChatBot.",
-          "I am an AI chatbot."
-        ]
-      },
-      {
-        "tag": "age",
-        "patterns": [
-          "How old are you?",
-          "What's your age?",
-          "When were you born?"
-        ],
-        "responses": [
-          "I am a machine, I don't age.",
-          "I don't have an age, I'm a computer program.",
-          "I don't age like humans do."
-        ]
-      },
-      {
-        "tag": "creator",
-        "patterns": [
-          "Who made you?",
-          "Who created you?",
-          "Who is your creator?"
-        ],
-        "responses": [
-          "I was created by François, Jason, Nathan and Robin.",
-          "My creator are François, Jason, Nathan and Robin.",
-          "I was built by François, Jason, Nathan and Robin."
-        ]
-      },
-      {
-        "tag": "howdoing",
-        "patterns": [
-          "How are you?",
-          "How's it going?",
-          "How's your day?",
-          "How are things?",
-          "What's up?",
-          "What's new?"
-        ],
-        "responses": [
-          "I'm doing well, thank you.",
-          "I'm fine, thanks for asking.",
-          "Everything is going well, thanks.",
-          "I'm just a computer program, so I don't really have feelings, but I'm functioning properly.",
-          "I'm here to help you, what can I do for you?"
-        ]
-      },
-      {
-        "tag": "joke",
-        "patterns": [
-          "Tell me a joke",
-          "Do you know any jokes?",
-          "Can you make me laugh?",
-          "Joke please"
-        ],
-        "responses": [
-          "Why did the tomato turn red? Because it saw the salad dressing!",
-          "Why did the cookie go to the doctor? Because it was feeling crummy!"
-        ]
-    },
-    {
-        "tag": "favorite_color",
-        "patterns": [
-          "What's your favorite color?",
-          "What color do you like?",
-          "Do you have a favorite color?",
-          "Which color do you prefer?"
-        ],
-        "responses": [
-          "I don't have the ability to see colors as I am a machine.",
-          "I'm not capable of having a favorite color as I am a program.",
-          "I don't have preferences like humans do as I am a computer program.",
-          "As an AI chatbot, I don't have the ability to see colors or have preferences."
-        ]
-      },
-      {
-        "tag": "hobbies",
-        "patterns": [
-          "What do you like to do?",
-          "What are your hobbies?",
-          "What do you do for fun?",
-          "Do you have any interests?"
-        ],
-        "responses": [
-          "As a chatbot, I don't have the ability to have hobbies or interests as humans do.",
-          "I'm programmed to assist and communicate with people, that's my purpose.",
-          "My only job is to chat with you and help you with whatever you need.",
-          "I'm here to answer your questions and provide information, that's what I do best."
-        ]
-      },
-      {
-        "tag": "weather",
-        "patterns": [
-          "What's the weather like today?",
-          "Will it rain today?",
-          "Is it hot outside?",
-          "What's the temperature?",
-          "Can you give me a weather update?"
-        ],
-        "responses": [
-          "I'm sorry, I don't have access to real-time weather data.",
-          "I'm not able to provide weather updates as I'm a chatbot.",
-          "I don't have the ability to check the weather as I am a machine.",
-          "I suggest checking a weather app or website for accurate weather information."
-        ]
-      },
-      {
-        "tag": "movies",
-        "patterns": [
-          "What's your favorite movie?",
-          "Do you like movies?",
-          "What kind of movies do you like?",
-          "Have you seen any good movies lately?"
-        ],
-        "responses": [
-          "As a chatbot, I don't have the ability to watch movies or have preferences like humans do.",
-          "I'm here to chat and assist you, not to watch movies.",
-          "I don't have the ability to like or dislike things as I am a machine.",
-          "My main purpose is to help you with whatever you need, not to watch movies."
-        ]
-      }
+        {
+            "tag": "salutation",
+            "patterns": [
+                "Bonjour",
+                "Salut",
+                "Coucou",
+                "Hello",
+                "Hi"
+            ],
+            "responses": [
+                "Bonjour ! Comment puis-je vous aider ?",
+                "Salut ! Que puis-je faire pour vous ?",
+                "Hello ! En quoi puis-je vous assister ?"
+            ]
+        },
+        {
+            "tag": "au revoir",
+            "patterns": [
+                "Au revoir",
+                "A plus tard",
+                "A bientot",
+                "A la prochaine",
+                "Bye"
+            ],
+            "responses": [
+                "Au revoir ! N'hésitez pas à revenir si vous avez besoin d'aide.",
+                "À bientôt !",
+                "À la prochaine !",
+                "Bye !"
+            ]
+        },
+        {
+            "tag": "remerciement",
+            "patterns": [
+                "Merci",
+                "Merci beaucoup",
+                "Merci bien",
+                "Je vous remercie",
+                "C'est gentil"
+            ],
+            "responses": [
+                "De rien !",
+                "Je suis là pour ça !",
+                "Avec plaisir !"
+            ]
+        },
+        {
+            "tag": "aide",
+            "patterns": [
+                "j'ai besoin d'aide",
+                "je ne comprends pas",
+                "peux-tu m'aider ?"
+            ],
+            "responses": [
+                "Bien sûr, que puis-je faire pour vous ?",
+                "Je suis là pour vous aider, que voulez-vous savoir ?",
+                "Je suis là pour vous aider, posez-moi toutes les questions que vous voulez."
+            ]
+        },
+        {
+            "tag": "inconnu",
+            "patterns": [
+                "Je ne sais pas",
+                "Je ne comprends pas",
+                "Je ne suis pas sur(e)"
+            ],
+            "responses": [
+                "Je vois. Que voulez-vous savoir ?",
+                "Pas de problème, n'hésitez pas à me poser des questions si vous en avez.",
+                "Je suis là pour vous aider, posez-moi toutes les questions que vous voulez."
+            ]
+        },
+        {
+            "tag": "quesaistufaire",
+            "patterns": [
+                "Qui-es tu",
+                "Tu sers a quoi",
+                "Tu peux m'aider comment",
+                "Parle moi de toi"
+            ],
+            "responses": [
+                "Je suis un Chatbot conçu par François Zhou, Nathan Cohen, Jason Maureille et Robin Armingaud, crée dans le cadre de l'UE NLP et qui a pour but de vous aider à choisir votre TAF"
+            ]
+        },
+        {
+            "tag": "aideTAF",
+            "patterns": [
+                "Je veux que tu m'aides a choisir une TAF",
+                "Aide-moi a choisir une TAF",
+                "Quelle TAF"
+            ],
+            "responses": [
+                "Bien sûr ! Dites-moi un domaine qui vous intéresse ou demandez moi un renseignement sur l'une des TAFs suivantes : DEMIN, ROBIN, ASCY, DCL, DASCI, COPSI ou DIGIC"
+            ]
+        },
+        {
+            "tag": "perduTAF",
+            "patterns": [
+                "Je ne sais pas du tout quelle TAF faire",
+                "Je suis perdu"
+            ],
+            "responses": [
+                "Pas de panique ! Je peux vous parler des TAFs DEMIN, ROBIN, ASCY, DCL, DASCI, COPSI ou DIGIC. Sinon dites moi si vous êtes intéressé plûtot par l'informatique, l'intelligence artificielle, la recherche opérationnelle, le management et la transition digitale, l'énergie ou la robotique"
+            ]
+        },
+        {
+            "tag": "interet_energie",
+            "patterns": [
+                "J'aime l'energie",
+                "je veux travailler dans l'energie",
+                "je veux construire des centrales",
+                "j'aime le nucleaire"
+            ],
+            "responses": [
+                "Super, pour vous la TAF DEMIN semble parfaite ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
+            ]
+        },
+        {
+            "tag": "interetmanagement",
+            "patterns": [
+                "je suis interesse par le marketing",
+                "je suis interesse par l'economie",
+                "Je veux etre manager",
+                "le management m'interesse",
+                "la transition digitale m'interesse"
+            ],
+            "responses": [
+                "Super, je vous conseille la TAF DIGIC ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
+            ]
+        },
+        {
+            "tag": "interetrobot",
+            "patterns": [
+                "J'aime l'electronique",
+                "J'aime la robotique",
+                "J'aime les systemes embarques",
+                "Je veux travailler dans l'informatique embarquee"
+            ],
+            "responses": [
+                "Super, je vous conseille la TAF ASCY ou ROBIN ! N'hésitez pas à poser plus de questions pour avoir des détails sur ces TAFs"
+            ]
+        },
+        {
+            "tag": "interetcopsi",
+            "patterns": [
+                "J'aime la recherche operationnelle",
+                "J'aime l'optimisation",
+                "Je veux faire de l'optimisation",
+                "Je veux planifier ou faire de la planification",
+                "J'aime l'ordonnancement"
+            ],
+            "responses": [
+                "Super, je vous conseille la TAF COPSI ! N'hésitez pas à poser plus de questions pour avoir des détails sur cette TAF"
+            ]
+        },
+        {
+            "tag": "copsi",
+            "patterns": [
+                "Je suis interesse par la TAF COPSI",
+                "Qu'est-ce que la TAF COPSI ?",
+                "COPSI"
+            ],
+            "responses": [
+                "La TAF COPSI est une spécialisation d'excellence dispensée au sein de l'IMT Atlantique, la 5ème meilleure école d'ingénieur en France. Cette TAF se concentre sur la Conception, l'Optimisation et le Pilotage des Systèmes Industriels. Les étudiants y apprennent des compétences clés telles que la recherche opérationnelle, l'intelligence artificielle, le génie industriel, l'optimisation et l'aide à la décision. Les diplômés de cette TAF sont équipés pour relever des défis complexes liés à la conception et à la gestion de systèmes industriels, en utilisant des outils et des méthodologies avancés pour optimiser les processus et améliorer les performances. Avec les compétences acquises dans cette TAF, les diplômés peuvent aspirer à une carrière réussie dans les industries de pointe telles que l'aérospatiale, l'automobile, la production d'énergie et bien d'autres encore."
+            ]
+        },
+        {
+            "tag": "rechercheoperationnelle",
+            "patterns": [
+                "Qu'est-ce que la recherche operationnelle en COPSI ?",
+                "La recherche operationnelle en COPSI"
+            ],
+            "responses": [
+                "La recherche opérationnelle est l'un des domaines clés enseignés dans la TAF COPSI. Elle permet d'appliquer des méthodes mathématiques et informatiques pour résoudre des problèmes de décision complexes, tels que l'optimisation des systèmes de production industriels, la gestion des chaînes d'approvisionnement, la planification des ressources, etc."
+            ]
+        },
+        {
+            "tag": "intelligenceartificielle",
+            "patterns": [
+                "Qu'est-ce que l'intelligence artificielle en COPSI ?",
+                "L'intelligence artificielle en COPSI"
+            ],
+            "responses": [
+                "L'intelligence artificielle est une discipline enseignée dans la TAF COPSI qui permet de développer des systèmes informatiques capables de traiter des données complexes et de réaliser des tâches intelligentes, telles que la reconnaissance d'images, la traduction automatique, la prédiction de comportements, etc. Les étudiants apprennent à utiliser des algorithmes d'apprentissage automatique et d'autres techniques avancées pour résoudre des problèmes liés à la conception et à la gestion de systèmes industriels."
+            ]
+        },
+        {
+            "tag": "genieindustriel",
+            "patterns": [
+                "Qu'est-ce que le genie industriel en COPSI ?",
+                "Le genie industriel en COPSI"
+            ],
+            "responses": [
+                "Le génie industriel est un domaine clé enseigné dans la TAF COPSI. Il s'agit d'une discipline qui permet de concevoir, d'optimiser et de gérer des systèmes de production industriels efficaces et rentables."
+            ]
+        },
+        {
+            "tag": "ascy",
+            "patterns": [
+                "Qu'est-ce que la TAF ASCY ?",
+                "Peux-tu me parler de la TAF ASCY ?",
+                "Je suis interesse par la TAF ASCY, peux-tu m'en dire plus ?"
+            ],
+            "responses": [
+                "La TAF ASCY forme des ingénieurs capables de concevoir, modéliser, simuler, valider et mettre en œuvre des systèmes cyber-physiques. Les ingénieurs ASCY sont en mesure de résoudre des problèmes complexes en combinant des connaissances en automatique, informatique industrielle, modélisation multi-physique et théorie du signal et de l'estimation. Ils sont également capables de développer des solutions innovantes pour les secteurs de l'industrie, de la santé, de l'environnement, des transports, etc."
+            ]
+        },
+        {
+            "tag": "automatique",
+            "patterns": [
+                "Qu'est-ce que l'automatique dans la TAF ASCY ?",
+                "Peux-tu m'en dire plus sur l'automatique dans la TAF ASCY ?",
+                "Je suis interesse par l'automatique, quelle est sa place dans la TAF ASCY ?"
+            ],
+            "responses": [
+                "L'automatique est une des thématiques principales de la TAF ASCY. Elle permet de concevoir des systèmes capables de s'adapter et de réagir en temps réel à des changements dans leur environnement. Les ingénieurs ASCY spécialisés en automatique ont des compétences en modélisation, analyse et synthèse de systèmes dynamiques, commande de systèmes linéaires et non-linéaires, observation et estimation d'états, optimisation, etc."
+            ]
+        },
+        {
+            "tag": "informatiqueindustrielle",
+            "patterns": [
+                "Qu'est-ce que l'informatique industrielle dans la TAF ASCY ?",
+                "Peux-tu m'en dire plus sur l'informatique industrielle dans la TAF ASCY ?",
+                "Je suis interesse par l'informatique industrielle, quelle est sa place dans la TAF ASCY ?"
+            ],
+            "responses": [
+                "L'informatique industrielle est une des thématiques de la TAF ASCY. Elle permet de concevoir des systèmes informatiques capables de superviser, contrôler et optimiser des processus industriels. Les ingénieurs ASCY spécialisés en informatique industrielle ont des compétences en architecture de systèmes d'information, programmation de systèmes temps-réel, gestion de bases de données industrielles, etc."
+            ]
+        },
+        {
+            "tag": "interetinfo",
+            "patterns": [
+                " J'ai un grand interet pour le developpement et j'aimerais en apprendre davantage.",
+                "Le codage est une passion pour moi et je souhaiterais l'etudier plus en profondeur.",
+                "Mon desir d'apprendre le developpement informatique est intense.",
+                "Je suis captive par la programmation et je desire explorer cette voie davantage.",
+                "Travailler en tant que developpeur est un reve que j'aimerais realiser.",
+                "J'ai une forte inclination pour l'etude du developpement logiciel et de ses techniques.",
+                "La creation de logiciels est une discipline qui me fascine et je suis motive pour en apprendre davantage.",
+                "Je suis interesse par l'informatique",
+                "J'aime coder",
+                "J'aime programmer",
+                "Je suis passionne par Python"
+            ],
+            "responses": [
+                "Super ! Les TAFs les plus orientées informatique sont DCL et DASCI. En particulier la TAF DCL forme aux méthodes et aux techniques fondamentales du développement logiciel. Les ingénieurs DCL sauront choisir, développer et maintenir les briques logicielles mais aussi organiser et animer les projets en mode collaboratif ou agile. Ils sauront aussi avoir un regard critique sur la fiabilité du système en intégrant dans leurs développements les dimensions stratégiques, juridiques et marchandes. Les mots-clés principaux de cette TAF sont : informatique, réseaux, conception, développement, logiciels sûrs, algorithmique, économie du logiciel, méthode agile, open source, maîtrise d’œuvre, maîtrise d’ouvrage."
+            ]
+        },
+        {
+            "tag": "recommenddasci",
+            "patterns": [
+                "J'aimerais faire de la finance",
+                "Je veux faire du Machine Learning",
+                "Je veux faire de l'IA",
+                "Je veux apprendre le Deep Learning",
+                "Je m'interesse au ML",
+                "Je veux apprendre la Intelligence Artificielle"
+            ],
+            "responses": [
+                "Dans ce cas je te conseille la taf DASCI. N'hésite pas à me poser plus de questions pour en savoir plus sur cette TAF ?"
+            ]
+        },
+        {
+            "tag": "aboutdasci",
+            "patterns": [
+                "Je suis interesse par la TAF DASCI",
+                "Qu'est-ce que la TAF DASCI ?",
+                "DASCI",
+                "Parle-moi de la TAF DASCI",
+                "Data Science"
+            ],
+            "responses": [
+                "La TAF DASCI est une spécialisation dispensée au sein de l'IMT Atlantique. Cette TAF se concentre sur la Data Science, offrant aux étudiants une formation de pointe dans les domaines de l'analyse de données, de la modélisation statistique et de l'apprentissage automatique. Les étudiants apprennent à manipuler des ensembles de données volumineux et complexes, à extraire des informations utiles, à construire des modèles prédictifs précis, et à communiquer efficacement les résultats à des publics non-techniques. Les diplômés de cette TAF sont hautement recherchés sur le marché de l'emploi en raison de la demande croissante pour des professionnels qualifiés en Data Science."
+            ]
+        },
+        {
+            "tag": "analysededonnees",
+            "patterns": [
+                "Qu'est-ce que l'analyse de donnees en DASCI ?",
+                "L'analyse de donnees en DASCI",
+                "Qu'est-ce que l'analyse de donnees en IA ?",
+                "L'analyse de donnees en IA",
+                "Qu'est-ce que l'analyse de donnees en Machine Learning ?",
+                "L'analyse de donnees en Machine Learning",
+                "Qu'est-ce que l'analyse de donnees en ML ?",
+                "L'analyse de donnees en ML",
+                "Qu'est-ce que l'analyse de donnees en Deep Learning ?",
+                "L'analyse de donnees en Deep Learning"
+            ],
+            "responses": [
+                "L'analyse de données est l'un des domaines clés enseignés dans la TAF DASCI. Elle permet d'utiliser des méthodes statistiques et informatiques pour explorer, nettoyer, transformer et visualiser des données dans le but d'extraire des informations et des connaissances utiles."
+            ]
+        },
+        {
+            "tag": "apprentissageautomatique",
+            "patterns": [
+                "Qu'est-ce que l'apprentissage automatique en DASCI ?",
+                "L'apprentissage automatique en DASCI",
+                "Qu'est-ce que l'apprentissage automatique en IA ?",
+                "L'apprentissage automatique en IA",
+                "Qu'est-ce que l'apprentissage automatique en Machine Learning ?",
+                "L'apprentissage automatique en Machine Learning",
+                "Qu'est-ce que l'apprentissage automatique en ML ?",
+                "L'apprentissage automatique en ML",
+                "Qu'est-ce que l'apprentissage automatique en Deep Learning"
+            ],
+            "responses": [
+                "L'apprentissage automatique est une discipline enseignée dans la TAF DASCI qui permet de développer des modèles statistiques et des algorithmes informatiques capables de réaliser des tâches intelligentes, telles que la reconnaissance de formes, la classification, la prédiction, etc. Les étudiants apprennent à utiliser des méthodes d'apprentissage supervisé et non supervisé pour résoudre des problèmes liés à la Data Science. L'apprentissage automatique est également un domaine clé de l'IA, du Machine Learning et du Deep Learning, où les algorithmes sont utilisés pour entraîner des modèles de réseaux de neurones profonds à partir de grandes quantités de données pour effectuer des tâches telles que la reconnaissance d'images et de voix, la traduction de langues, etc."
+            ]
+        },
+        {
+            "tag": "digic",
+            "patterns": [
+                "Qu'est-ce que la TAF DIGIC ?",
+                "Peux-tu me donner une description de la TAF DIGIC ?",
+                "Je voudrais en savoir plus sur la TAF DIGIC",
+                "La TAF DIGIC m'interesse, que peux-tu m'en dire ?"
+            ],
+            "responses": [
+                "La TAF DIGIC est une spécialisation de l'école d'ingénieurs IMT Atlantique. Elle forme les étudiants à la digitalisation, l'innovation et les changements en entreprise. Les élèves apprennent les notions d'économie, de stratégie, d'organisation, de marketing, de recueil de données et de droit du numérique pour être capables de conseiller les entreprises dans leur transformation digitale."
+            ]
+        },
+        {
+            "tag": "economie",
+            "patterns": [
+                "Quels sont les enseignements d'economie dans la TAF DIGIC ?",
+                "Je m'interesse a l'economie, est-ce que la TAF DIGIC correspond a mon profil ?",
+                "Y a-t-il des cours d'economie dans la TAF DIGIC ?"
+            ],
+            "responses": [
+                "La TAF DIGIC propose des enseignements en économie, notamment sur les modèles d'affaires, les stratégies de marché et les politiques d'innovation."
+            ]
+        },
+        {
+            "tag": "strategie",
+            "patterns": [
+                "Est-ce que la TAF DIGIC aborde la strategie d'entreprise ?",
+                "Je suis interesse par la strategie, est-ce que la TAF DIGIC est faite pour moi ?",
+                "Quels sont les enseignements sur la strategie dans la TAF DIGIC ?"
+            ],
+            "responses": [
+                "Oui, la TAF DIGIC aborde les questions de stratégie d'entreprise et de transformation digitale. Les élèves apprennent à élaborer des plans d'action pour les entreprises en fonction des opportunités offertes par les technologies numériques."
+            ]
+        },
+        {
+            "tag": "marketing",
+            "patterns": [
+                "Est-ce que la TAF DIGIC propose des enseignements en marketing ?",
+                "Je suis interesse par le marketing, est-ce que la TAF DIGIC est faite pour moi ?",
+                "Quels sont les enseignements sur le marketing dans la TAF DIGIC ?"
+            ],
+            "responses": [
+                "La TAF DIGIC propose des enseignements en marketing, notamment sur les stratégies digitales, le développement de produits innovants et la gestion de la relation client."
+            ]
+        },
+        {
+            "tag": "dcl",
+            "patterns": [
+                "Je suis interesse par le developpement logiciel, quels sont les TAF qui pourraient m'interesser ?",
+                "Je veux en savoir plus sur la TAF DCL",
+                "Qu'est-ce que la TAF DCL ?",
+                "Pourriez-vous me parler de la TAF DCL ?",
+                "Quels sont les mots-cles de la TAF DCL ?"
+            ],
+            "responses": [
+                "La TAF DCL forme aux méthodes et aux techniques fondamentales du développement logiciel. Les ingénieurs DCL sauront choisir, développer et maintenir les briques logicielles mais aussi organiser et animer les projets en mode collaboratif ou agile. Ils sauront aussi avoir un regard critique sur la fiabilité du système en intégrant dans leurs développements les dimensions stratégiques, juridiques et marchandes. Les mots-clés principaux de cette TAF sont : informatique, réseaux, conception, développement, logiciels sûrs, algorithmique, économie du logiciel, méthode agile, open source, maîtrise d’œuvre, maîtrise d’ouvrage."
+            ]
+        },
+        {
+            "tag": "informatique",
+            "patterns": [
+                "Quels sont les domaines de l'informatique abordes dans la TAF DCL ?",
+                "Je m'interesse a l'informatique, est-ce que la TAF DCL pourrait me correspondre ?",
+                "La TAF DCL inclut-elle des cours d'informatique ?"
+            ],
+            "responses": [
+                "Oui, la TAF DCL inclut des cours d'informatique, notamment la conception et le développement logiciel, les réseaux et l'algorithmique."
+            ]
+        },
+        {
+            "tag": "agile",
+            "patterns": [
+                "Est-ce que la methode agile est enseignee dans la TAF DCL ?",
+                "Je m'interesse a la methode agile, est-ce qu'elle est abordee dans la TAF DCL ?"
+            ],
+            "responses": [
+                "Oui, la méthode agile est abordée dans la TAF DCL. Les ingénieurs DCL sauront organiser et animer les projets en mode collaboratif ou agile."
+            ]
+        },
+        {
+            "tag": "logicielsur",
+            "patterns": [
+                "La TAF DCL forme-t-elle a la securite des logiciels ?",
+                "Je veux en savoir plus sur la securite des logiciels dans la TAF DCL"
+            ],
+            "responses": [
+                "Oui, la TAF DCL forme les ingénieurs à la sécurité des logiciels pour leur permettre d'avoir un regard critique sur la fiabilité du système."
+            ]
+        },
+        {
+            "tag": "economielogiciel",
+            "patterns": [
+                "Qu'est-ce que l'economie du logiciel ?",
+                "Comment est-ce que l'economie du logiciel est etudiee dans la TAF DCL ?",
+                "En quoi consiste l'economie du logiciel dans la TAF DCL ?"
+            ],
+            "responses": [
+                "L'économie du logiciel est une thématique importante dans la TAF DCL. Elle permet aux ingénieurs formés dans cette spécialisation de comprendre les enjeux économiques liés au développement et à la maintenance de logiciels. Les étudiants apprennent à évaluer la rentabilité de projets logiciels, à établir des modèles économiques adaptés, à comprendre les problématiques de propriété intellectuelle et à gérer les coûts de production. Tout cela leur permet d'avoir une vision globale et stratégique de la création de logiciels sûrs et performants, indispensable dans le monde de l'informatique actuel."
+            ]
+        },
+        {
+            "tag": "demin",
+            "patterns": [
+                "Qu'est-ce que la TAF DEMIN ?",
+                "En quoi consiste la TAF DEMIN ?",
+                "Qu'apprend-on dans la TAF DEMIN ?",
+                "Je suis interesse par la physique nucleaire",
+                "Je suis interesse par la radioactivite"
+            ],
+            "responses": [
+                "La TAF DEMIN est une spécialisation proposée par l'IMT Atlantique qui forme des ingénieurs capables de développer et de manager des installations nucléaires. Les étudiants y apprennent les principes de la physique nucléaire, de la radioactivité et de la production d'énergie nucléaire. Ils se spécialisent également dans le management de projets liés aux installations nucléaires, la gestion des risques et la sûreté nucléaire. Cette TAF offre une formation technique pointue et une vision globale des enjeux énergétiques actuels."
+            ]
+        },
+        {
+            "tag": "physiquenucleaire",
+            "patterns": [
+                "Qu'est-ce que la physique nucleaire ?",
+                "En quoi consiste la physique nucleaire dans la TAF DEMIN ?",
+                "Quel est le lien entre la TAF DEMIN et la physique nucleaire ?"
+            ],
+            "responses": [
+                "La physique nucléaire est une thématique importante dans la TAF DEMIN. Les étudiants y apprennent les principes fondamentaux de la physique des particules et de la radioactivité, ainsi que les technologies de production d'énergie nucléaire. Cette formation pointue leur permet d'acquérir les compétences techniques nécessaires à la gestion et au développement des installations nucléaires."
+            ]
+        },
+        {
+            "tag": "radioactivite",
+            "patterns": [
+                "Qu'est-ce que la radioactivite ?",
+                "Comment est etudiee la radioactivite dans la TAF DEMIN ?",
+                "En quoi la radioactivite est-elle importante dans la TAF DEMIN ?"
+            ],
+            "responses": [
+                "La radioactivité est un sujet essentiel dans la TAF DEMIN. Les étudiants y apprennent les propriétés et les dangers des matériaux radioactifs, ainsi que les techniques de gestion des déchets nucléaires. Ils étudient également les différentes sources de radioactivité et les impacts environnementaux et sanitaires associés. Cette formation pointue leur permet d'acquérir les compétences nécessaires à la gestion et au développement des installations nucléaires dans un contexte de sûreté renforcée."
+            ]
+        }
     ]
-  }
-  
-  
+}

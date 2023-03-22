@@ -1,4 +1,8 @@
+# -*- coding: utf-8 -*-
+
+
 import nltk
+import unidecode
 nltk.download('popular')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -10,7 +14,7 @@ from tensorflow.keras.models import load_model
 model = load_model('model.h5')
 import json
 import random
-intents = json.loads(open('data.json').read())
+intents = json.loads(open('data.json', 'r', encoding='utf-8').read())
 words = pickle.load(open('texts.pkl','rb'))
 classes = pickle.load(open('labels.pkl','rb'))
 
@@ -69,9 +73,12 @@ def chatbot_response(msg, userID='1'):
                     if not 'context_filter' in i or \
                         (userID in context and 'context_filter' in i and i['context_filter'] == context[userID]):
                         # a random response from the intent
+                        print(random.choice(i['responses']))
                         return random.choice(i['responses'])
-                
+                    
             ints.pop(0)
+            return 'Désolé je ne comprends pas'
+            
 
 
 from flask import Flask, render_template, request
@@ -85,7 +92,7 @@ def home():
 
 @app.route("/get")
 def get_bot_response():
-    userText = request.args.get('msg')
+    userText = unidecode.unidecode(request.args.get('msg'))
     return chatbot_response(userText)
 
 

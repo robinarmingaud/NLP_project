@@ -5,6 +5,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import json
 import pickle
+import unidecode
 
 import numpy as np
 import tensorflow.keras as keras
@@ -16,8 +17,8 @@ import random
 words=[]
 classes = []
 documents = []
-ignore_words = ['?', '!']
-data_file = open('data.json').read()
+ignore_words = ['?', '!', '.']
+data_file = open('data.json', 'r', encoding='utf-8').read()
 intents = json.loads(data_file)
 
 
@@ -94,7 +95,7 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 #fitting and saving the model 
-hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
+hist = model.fit(np.array(train_x), np.array(train_y), epochs=500, batch_size=5, verbose=1)
 model.save('model.h5', hist)
 
 print("model created")
